@@ -1,0 +1,1 @@
+C:\Users\hyper\workspace\bobsaver\projectm\build_output\vendor\glad\glad_obj.dir\Release\glad_obj.lib

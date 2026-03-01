@@ -1,0 +1,24 @@
+^C:\USERS\HYPER\WORKSPACE\BOBSAVER\PROJECTM\BUILD_OUTPUT\CMAKEFILES\BE879D0C15A7882D16EB88EC189BB9E6\MILKDROPSTATICSHADERS.CPP.RULE
+setlocal
+cd C:\Users\hyper\workspace\bobsaver\projectm\src\libprojectM\MilkdropPreset
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D SHADER_FILES="Shaders/Blur1FragmentShaderGlsl330.frag;Shaders/Blur2FragmentShaderGlsl330.frag;Shaders/BlurVertexShaderGlsl330.vert;Shaders/PresetCompVertexShaderGlsl330.vert;Shaders/PresetMotionVectorsVertexShaderGlsl330.vert;Shaders/PresetShaderHeaderGlsl330.inc;Shaders/PresetWarpFragmentShaderGlsl330.frag;Shaders/PresetWarpVertexShaderGlsl330.vert;Shaders/TexturedDrawFragmentShaderGlsl330.frag;Shaders/TexturedDrawVertexShaderGlsl330.vert;Shaders/UntexturedDrawFragmentShaderGlsl330.frag;Shaders/UntexturedDrawVertexShaderGlsl330.vert" -D OUTPUT_DIR=C:/Users/hyper/workspace/bobsaver/projectm/build_output/src/libprojectM/MilkdropPreset -P C:/Users/hyper/workspace/bobsaver/projectm/src/libprojectM/MilkdropPreset/GenerateStaticShaders.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HYPER\WORKSPACE\BOBSAVER\PROJECTM\SRC\LIBPROJECTM\MILKDROPPRESET\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hyper/workspace/bobsaver/projectm -BC:/Users/hyper/workspace/bobsaver/projectm/build_output --check-stamp-file C:/Users/hyper/workspace/bobsaver/projectm/build_output/src/libprojectM/MilkdropPreset/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

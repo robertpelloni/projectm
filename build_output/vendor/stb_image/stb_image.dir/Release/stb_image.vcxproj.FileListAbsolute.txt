@@ -1,0 +1,1 @@
+C:\Users\hyper\workspace\bobsaver\projectm\build_output\vendor\stb_image\stb_image.dir\Release\stb_image.lib

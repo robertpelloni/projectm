@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hyper\workspace\bobsaver\projectm\vendor\hlslparser\src\CodeWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\bobsaver\projectm\vendor\hlslparser\src\Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\bobsaver\projectm\vendor\hlslparser\src\GLSLGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\bobsaver\projectm\vendor\hlslparser\src\HLSLParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\bobsaver\projectm\vendor\hlslparser\src\HLSLTokenizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hyper\workspace\bobsaver\projectm\vendor\hlslparser\src\HLSLTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\hyper\workspace\bobsaver\projectm\vendor\hlslparser\src\CodeWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\bobsaver\projectm\vendor\hlslparser\src\Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\bobsaver\projectm\vendor\hlslparser\src\GLSLGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\bobsaver\projectm\vendor\hlslparser\src\HLSLParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\bobsaver\projectm\vendor\hlslparser\src\HLSLTokenizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hyper\workspace\bobsaver\projectm\vendor\hlslparser\src\HLSLTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hyper\workspace\bobsaver\projectm\vendor\hlslparser\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{05EC38D2-50F0-367F-9E3E-06A8DBBF2EF2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E114CB20-544A-3AC3-BED1-001144D10100}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
