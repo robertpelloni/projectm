@@ -6,7 +6,7 @@ namespace Renderer {
 #ifdef USE_GLES
 static constexpr char ShaderVersion[] = "#version 300 es\n\n";
 #else
-static constexpr char ShaderVersion[] = "#version 330\n\n";
+static constexpr char ShaderVersion[] = "#version 330 core\n\n";
 #endif
 
 static constexpr char CopyTextureVertexShader[] = R"(
