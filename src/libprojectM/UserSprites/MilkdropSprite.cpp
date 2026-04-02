@@ -62,7 +62,7 @@ void MilkdropSprite::Init(const std::string& spriteData, const Renderer::RenderC
         // GLES also requires a precision specifier for variables and 3D samplers
         constexpr char versionHeader[] = "#version 300 es\n\nprecision mediump float;\nprecision mediump sampler3D;\n";
 #else
-        constexpr char versionHeader[] = "#version 330\n\n";
+        constexpr char versionHeader[] = "#version 330 core\n\n";
 #endif
 
         spriteShader = std::make_shared<Renderer::Shader>();

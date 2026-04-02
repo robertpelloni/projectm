@@ -21,7 +21,7 @@ MilkdropStaticShaders::MilkdropStaticShaders(bool useGLES)
     }
     else
     {
-        m_versionHeader = "#version 330";
+        m_versionHeader = "#version 330 core";
         m_GLSLGeneratorVersion = M4::GLSLGenerator::Version::Version_330;
     }
 }
