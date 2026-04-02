@@ -269,12 +269,20 @@ if(ENABLE_INSTALL)
                 PATH_VARS PROJECTM_BIN_DIR PROJECTM_INCLUDE_DIR
                 )
 
-    install(FILES
-            "${CMAKE_CURRENT_BINARY_DIR}/libprojectM/projectM4ConfigVersion.cmake"
-            "${CMAKE_CURRENT_BINARY_DIR}/libprojectM/projectM4Config.cmake"
-            DESTINATION "${PROJECTM_LIB_DIR}/cmake/projectM4"
-            COMPONENT Devel
-            )
+        install(FILES
+                "${CMAKE_CURRENT_BINARY_DIR}/libprojectM/projectM4ConfigVersion.cmake"
+                "${CMAKE_CURRENT_BINARY_DIR}/libprojectM/projectM4Config.cmake"
+                DESTINATION "${PROJECTM_LIB_DIR}/cmake/projectM4"
+                COMPONENT Devel
+                )
+
+        if(NOT ENABLE_EMSCRIPTEN AND ENABLE_GLES)
+            install(FILES
+                    "${PROJECTM_SOURCE_DIR}/cmake/gles/FindOpenGL.cmake"
+                    DESTINATION "${PROJECTM_LIB_DIR}/cmake/projectM4"
+                    COMPONENT Devel
+                    )
+        endif()
 
         install(EXPORT libprojectMTargets
                 FILE projectM4Targets.cmake
