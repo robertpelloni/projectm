@@ -73,11 +73,11 @@ PROJECTM_EXPORT void projectm_write_debug_image_on_next_frame(projectm_handle in
  *       correct number of values!
  * @since 4.2.0
  */
-struct projectm_expression_variable_values {
+typedef struct projectm_expression_variable_values {
     uint32_t value_count; //!< The number of entries in @a values.
     uint32_t index;       //!< The custom shape/waveform or user sprite index. 0 for any other block.
     double** values;      //!< An array of double pointers, containing the values of the expression values as they were set to at the end of the last rendered frame.
-};
+} projectm_expression_variable_values;
 
 /**
  * @brief Available expression blocks for watches.
