@@ -6,8 +6,8 @@
 - Attempted to sync with the `upstream/master` branch, and encountered a complex "unrelated histories" conflict due to the specific state of the local `master` branch. Resolved by aborting the merge and cleanly cherry-picking the documentation files on top of the restored `master` branch, avoiding massive C++ refactoring conflicts.
 - Verified the build and tests pass successfully with 100% completion rate.
 - Addressed `TODO.md` item: "Refactor redundant code paths in Audio/PCM buffer implementations."
+- Addressed `TODO.md` item: "Polish cross-platform CI pipelines (GitHub Actions) for better test coverage" by enabling builds on push/pull requests rather than just dispatch.
 
 ## Next Steps for Successor Model
 1. Review pending pull requests and address open UI issues in canonical frontends.
-2. Polish cross-platform CI pipelines (GitHub Actions) for better test coverage.
-3. Continue maintaining continuous autonomous execution by ensuring `git push` is invoked when appropriate milestones are completed.
+2. Continue maintaining continuous autonomous execution by ensuring `git push` is invoked when appropriate milestones are completed.
