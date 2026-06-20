@@ -21,14 +21,9 @@ void PCM::AddToBuffer(
     {
         size_t const bufferOffset = (m_start + i) % AudioBufferSamples;
         m_inputBufferL[bufferOffset] = 128.0f * (static_cast<float>(samples[0 + i * channels]) - float(signalOffset)) / float(signalAmplitude);
-        if (channels > 1)
-        {
-            m_inputBufferR[bufferOffset] = 128.0f * (static_cast<float>(samples[1 + i * channels]) - float(signalOffset)) / float(signalAmplitude);
-        }
-        else
-        {
-            m_inputBufferR[bufferOffset] = m_inputBufferL[bufferOffset];
-        }
+        m_inputBufferR[bufferOffset] = (channels > 1) ?
+            128.0f * (static_cast<float>(samples[1 + i * channels]) - float(signalOffset)) / float(signalAmplitude) :
+            m_inputBufferL[bufferOffset];
     }
     m_start = (m_start + sampleCount) % AudioBufferSamples;
 }
