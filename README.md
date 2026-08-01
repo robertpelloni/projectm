@@ -1,8 +1,8 @@
-[![Windows Build Status](https://github.com/projectM-visualizer/projectm/actions/workflows/build_windows.yml/badge.svg?branch=master)](https://github.com/projectM-visualizer/projectm/actions/workflows/build_windows.yml)
-[![Linux Build Status](https://github.com/projectM-visualizer/projectm/actions/workflows/build_linux.yml/badge.svg?branch=master)](https://github.com/projectM-visualizer/projectm/actions/workflows/build_linux.yml)
-[![macOS Build Status](https://github.com/projectM-visualizer/projectm/actions/workflows/build_osx.yml/badge.svg?branch=master)](https://github.com/projectM-visualizer/projectm/actions/workflows/build_osx.yml)
-[![Emscripten Build Status](https://github.com/projectM-visualizer/projectm/actions/workflows/build_emscripten.yml/badge.svg?branch=master)](https://github.com/projectM-visualizer/projectm/actions/workflows/build_emscripten.yml)
-[![Android Build Status](https://github.com/projectM-visualizer/projectm/actions/workflows/build_android.yml/badge.svg?branch=master)](https://github.com/projectM-visualizer/projectm/actions/workflows/build_android.yml)
+[![Windows Build Status](https://github.com/projectM-visualizer/projectm/actions/workflows/build_windows.yml/badge.svg?branch=main)](https://github.com/projectM-visualizer/projectm/actions/workflows/build_windows.yml)
+[![Linux Build Status](https://github.com/projectM-visualizer/projectm/actions/workflows/build_linux.yml/badge.svg?branch=main)](https://github.com/projectM-visualizer/projectm/actions/workflows/build_linux.yml)
+[![macOS Build Status](https://github.com/projectM-visualizer/projectm/actions/workflows/build_osx.yml/badge.svg?branch=main)](https://github.com/projectM-visualizer/projectm/actions/workflows/build_osx.yml)
+[![Emscripten Build Status](https://github.com/projectM-visualizer/projectm/actions/workflows/build_emscripten.yml/badge.svg?branch=main)](https://github.com/projectM-visualizer/projectm/actions/workflows/build_emscripten.yml)
+[![Android Build Status](https://github.com/projectM-visualizer/projectm/actions/workflows/build_android.yml/badge.svg?branch=main)](https://github.com/projectM-visualizer/projectm/actions/workflows/build_android.yml)
 
 ![Discord Shield](https://discordapp.com/api/guilds/737206408482914387/widget.png?style=shield) [Chat with us on Discord](https://discord.gg/N9DyQfCH4j)
 
@@ -158,18 +158,21 @@ development team. Please report bugs in those applications to their respective d
 
 - [Article](https://lwn.net/Articles/750152/)
 
-# Building from source
+## Installation & Building from source
 
+To build `libprojectM` from source, you will primarily use CMake. The project supports compiling across a multitude of platforms including Windows, macOS, Linux, Android, and WebGL (via Emscripten).
+
+For comprehensive instructions on dependencies, build environments, and generating build files, please refer to the primary build guide:
 See [BUILDING.md](BUILDING.md) and
 the [developer documentation in the wiki](https://github.com/projectM-visualizer/projectm/wiki/Building-libprojectM).
 
-# Using the library
+## Usage
 
 At its core projectM is a library, [libprojectM](src/libprojectM). This library is responsible for parsing presets,
 analyzing audio PCM data with beat detection and FFT, applying the preset to the audio feature data and rendering the
 resulting output with OpenGL. It can render to a dedicated OpenGL context or a texture.
 
-To get started using projectM in your own projects, please go to the wiki and read
+To get started using projectM in your own application or frontend project, please go to the wiki and read
 the [developer documentation](https://github.com/projectM-visualizer/projectm/wiki#integrating-projectm-into-applications)
 available there.
 
