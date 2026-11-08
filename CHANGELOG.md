@@ -1,6 +1,11 @@
 # CHANGELOG
 
-## [4.1.0-dev.3] - Current
+## [4.1.0-dev.4] - Current
+### Added
+- Added `GraphicsBackend.hpp` to `src/libprojectM/Renderer/`, introducing `GraphicsBackendType` (OpenGL, OpenGLES, Vulkan, Metal, DirectX) and `GraphicsBackendCapabilities` for graphics backend modernization.
+- Resolved `Texture::Source::Internal` usage in `MilkdropNoise.cpp`.
+
+## [4.1.0-dev.3] - Previous
 ### Fixed
 - Fixed null pointer dereference vulnerability in `src/sdl-test-ui/setup.cpp` when environment variable (`HOME` or `USERPROFILE`) is unset in `getConfigFilePath`.
 

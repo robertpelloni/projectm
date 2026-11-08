@@ -7,3 +7,4 @@
 - [x] Refactor redundant code paths in Audio/PCM buffer implementations.
 - [x] Audit test coverage and build pipeline on primary branch `main`.
 - [x] Guard against null pointer dereference in `src/sdl-test-ui/setup.cpp` when HOME/USERPROFILE is unset.
+- [x] Lay core abstractions for graphics modernization (`GraphicsBackend.hpp` and texture source cleanup).
