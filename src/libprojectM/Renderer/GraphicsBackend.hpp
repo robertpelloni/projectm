@@ -1,12 +1,13 @@
 /**
  * @file GraphicsBackend.hpp
- * @brief Abstract definitions and enumerations for modern graphics backend support.
+ * @brief Abstract definitions, enumerations, and device interface for modern graphics backend support.
  */
 #pragma once
 
 #include <projectM-4/projectM_cxx_export.h>
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 namespace libprojectM {
@@ -35,6 +36,36 @@ struct PROJECTM_CXX_EXPORT GraphicsBackendCapabilities
     bool supportsComputeShaders{false};                   //!< Whether compute shaders are available.
     bool supportsFloatFramebuffers{true};                 //!< Whether floating point render targets are supported.
     uint32_t maxTextureDimension{4096};                   //!< Maximum allowable 2D texture width/height.
+};
+
+/**
+ * @brief Abstract device interface providing decoupled graphics hardware access.
+ */
+class PROJECTM_CXX_EXPORT IGraphicsDevice
+{
+public:
+    virtual ~IGraphicsDevice() = default;
+
+    /**
+     * @brief Returns the backend type implemented by this device.
+     */
+    virtual auto GetBackendType() const -> GraphicsBackendType = 0;
+
+    /**
+     * @brief Queries hardware capabilities and limits.
+     */
+    virtual auto GetCapabilities() const -> const GraphicsBackendCapabilities& = 0;
+
+    /**
+     * @brief Initializes hardware context and command queues.
+     * @return true on success, false otherwise.
+     */
+    virtual auto Initialize() -> bool = 0;
+
+    /**
+     * @brief Shuts down hardware context and releases all allocated device resources.
+     */
+    virtual void Shutdown() = 0;
 };
 
 } // namespace Renderer

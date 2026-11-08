@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.5] - Current
+## [4.1.0-dev.6] - Current
+### Added
+- Added abstract device interface `IGraphicsDevice` in `src/libprojectM/Renderer/GraphicsBackend.hpp` for decoupling graphics hardware access across modern APIs (Vulkan, Metal, DirectX, and OpenGL).
+
+## [4.1.0-dev.5] - Previous
 ### Optimized
 - Optimized `MilkdropFFT::TimeToFrequencyDomain` by reusing a pre-allocated scratchpad buffer `m_spectrumData` instead of heap-allocating on every audio frame, minimizing memory allocations on high-frequency audio analysis loops.
 
