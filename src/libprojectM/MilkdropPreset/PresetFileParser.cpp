@@ -1,4 +1,5 @@
 #include "PresetFileParser.hpp"
+#include "Utils.hpp"
 
 #include <algorithm>
 #include <fstream>
@@ -185,11 +186,8 @@ void PresetFileParser::ParseLine(const std::string& line)
 
 auto PresetFileParser::ToLower(std::string str) -> std::string
 {
-    std::transform(str.begin(), str.end(), str.begin(),
-                   [](unsigned char c){ return std::tolower(c); }
-    );
-
-    return str;
+    // Reuse central projectM utility to eliminate redundant string lowercase transforms.
+    return Utils::ToLower(str);
 }
 
 } // namespace MilkdropPreset

@@ -11,3 +11,4 @@
 - [x] Optimize FFT memory allocation path in `MilkdropFFT` to eliminate per-frame dynamic allocations.
 - [x] Define `IGraphicsDevice` abstract hardware device interface for modern graphics APIs.
 - [x] Optimize beat detection rate calculation in `Loudness::AdjustRateToFps`.
+- [x] Consolidate redundant string lowercase transformations in `PresetFileParser` using `Utils::ToLower`.

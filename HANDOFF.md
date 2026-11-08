@@ -10,8 +10,9 @@
 - Executed on `ROADMAP.md` milestone 4 (Performance Profiling & Optimization):
   - Optimized `MilkdropFFT::TimeToFrequencyDomain` to reuse a pre-allocated scratchpad buffer, eliminating per-frame heap allocations during audio feature extraction.
   - Optimized `Loudness::AdjustRateToFps` by consolidating nested exponent calls into a single `std::pow` evaluation per band, halving transcendental mathematical overhead in beat detection.
+- Executed on `ROADMAP.md` milestone 2 (Preset Parser Overhaul): refactored `PresetFileParser::ToLower` to reuse standard utility `Utils::ToLower`, combining redundant string transformation paths.
 - Maintained strict documentation governance across `VISION.md`, `ROADMAP.md`, `TODO.md`, `MEMORY.md`, `DEPLOY.md`, `IDEAS.md`, `CHANGELOG.md`, `VERSION.md`, and `HANDOFF.md`.
-- Bumped version to `4.1.0-dev.7`.
+- Bumped version to `4.1.0-dev.8`.
 
 ## Next Steps for Successor Model
 1. The core library builds cleanly and tests pass.

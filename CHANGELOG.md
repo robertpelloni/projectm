@@ -1,6 +1,11 @@
 # CHANGELOG
 
-## [4.1.0-dev.7] - Current
+## [4.1.0-dev.8] - Current
+### Changed
+- Refactored `PresetFileParser::ToLower` to reuse standard utility `Utils::ToLower`, combining duplicate string lowercase transformations.
+- Updated `TextureAttachment` to use explicit `Texture::Source::Internal` for texture allocation.
+
+## [4.1.0-dev.7] - Previous
 ### Optimized
 - Optimized `Loudness::AdjustRateToFps` by consolidating nested exponent calls `std::pow(std::pow(rate, 30.0f), secondsSinceLastFrame)` into a single `std::pow(rate, 30.0f * secondsSinceLastFrame)`, halving transcendental call overhead in the per-frame beat detection calculation.
 
