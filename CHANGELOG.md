@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.2] - Current
+## [4.1.0-dev.3] - Current
+### Fixed
+- Fixed null pointer dereference vulnerability in `src/sdl-test-ui/setup.cpp` when environment variable (`HOME` or `USERPROFILE`) is unset in `getConfigFilePath`.
+
+## [4.1.0-dev.2] - Previous
 ### Changed
 - Clarified subproject roles and repository boundaries: confirmed that end-user UI features and dashboard integrations reside in `frontend-sdl2`.
 - Validated build pipeline, test coverage, and submodule initialization across dependencies.
