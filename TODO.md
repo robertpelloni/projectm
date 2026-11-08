@@ -8,3 +8,4 @@
 - [x] Audit test coverage and build pipeline on primary branch `main`.
 - [x] Guard against null pointer dereference in `src/sdl-test-ui/setup.cpp` when HOME/USERPROFILE is unset.
 - [x] Lay core abstractions for graphics modernization (`GraphicsBackend.hpp` and texture source cleanup).
+- [x] Optimize FFT memory allocation path in `MilkdropFFT` to eliminate per-frame dynamic allocations.

@@ -37,6 +37,7 @@ constexpr auto PI = 3.141592653589793238462643383279502884197169399f;
 MilkdropFFT::MilkdropFFT(size_t samplesIn, size_t samplesOut, bool equalize, float envelopePower)
     : m_samplesIn(samplesIn)
     , m_numFrequencies(samplesOut * 2)
+    , m_spectrumData(samplesOut * 2, std::complex<float>())
 {
     InitBitRevTable();
     InitCosSinTable();
@@ -155,14 +156,14 @@ void MilkdropFFT::TimeToFrequencyDomain(const std::vector<float>& waveformData, 
         return;
     }
 
-    // 1. Set up input to the FFT
-    std::vector<std::complex<float>> spectrumData(m_numFrequencies, std::complex<float>());
+    // 1. Set up input to the FFT using the pre-allocated scratchpad buffer to eliminate heap churn.
+    m_spectrumData.assign(m_numFrequencies, std::complex<float>());
     for (size_t i = 0; i < m_numFrequencies; i++)
     {
         size_t const idx{m_bitRevTable[i]};
         if (idx < m_samplesIn)
         {
-            spectrumData[i].real(waveformData[idx] * m_envelope[idx]);
+            m_spectrumData[i].real(waveformData[idx] * m_envelope[idx]);
         }
     }
 
@@ -182,9 +183,9 @@ void MilkdropFFT::TimeToFrequencyDomain(const std::vector<float>& waveformData, 
             for (size_t i = m; i < m_numFrequencies; i += dftSize)
             {
                 size_t const j{i + hdftsize};
-                std::complex<float> const tempNum{spectrumData[j] * w};
-                spectrumData[j] = spectrumData[i] - tempNum;
-                spectrumData[i] = spectrumData[i] + tempNum;
+                std::complex<float> const tempNum{m_spectrumData[j] * w};
+                m_spectrumData[j] = m_spectrumData[i] - tempNum;
+                m_spectrumData[i] = m_spectrumData[i] + tempNum;
             }
 
             w *= wp;
@@ -198,7 +199,7 @@ void MilkdropFFT::TimeToFrequencyDomain(const std::vector<float>& waveformData, 
     spectralData.resize(m_numFrequencies / 2);
     for (size_t i = 0; i < m_numFrequencies / 2; i++)
     {
-        spectralData[i] = m_equalize[i] * std::abs(spectrumData[i]);
+        spectralData[i] = m_equalize[i] * std::abs(m_spectrumData[i]);
     }
 }
 

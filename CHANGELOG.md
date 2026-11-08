@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.4] - Current
+## [4.1.0-dev.5] - Current
+### Optimized
+- Optimized `MilkdropFFT::TimeToFrequencyDomain` by reusing a pre-allocated scratchpad buffer `m_spectrumData` instead of heap-allocating on every audio frame, minimizing memory allocations on high-frequency audio analysis loops.
+
+## [4.1.0-dev.4] - Previous
 ### Added
 - Added `GraphicsBackend.hpp` to `src/libprojectM/Renderer/`, introducing `GraphicsBackendType` (OpenGL, OpenGLES, Vulkan, Metal, DirectX) and `GraphicsBackendCapabilities` for graphics backend modernization.
 - Resolved `Texture::Source::Internal` usage in `MilkdropNoise.cpp`.
