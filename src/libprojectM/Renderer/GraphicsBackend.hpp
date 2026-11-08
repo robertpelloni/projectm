@@ -68,5 +68,58 @@ public:
     virtual void Shutdown() = 0;
 };
 
+/**
+ * @brief Returns typical default capabilities for a given graphics backend type.
+ * @param type The graphics backend type to inspect.
+ * @return Default capability parameters for the backend.
+ */
+inline auto GetDefaultCapabilities(GraphicsBackendType type) -> GraphicsBackendCapabilities
+{
+    GraphicsBackendCapabilities caps{};
+    caps.type = type;
+
+    switch (type)
+    {
+        case GraphicsBackendType::Vulkan:
+            caps.apiVersion = "1.3";
+            caps.deviceName = "Vulkan Physical Device";
+            caps.supportsComputeShaders = true;
+            caps.supportsFloatFramebuffers = true;
+            caps.maxTextureDimension = 8192;
+            break;
+        case GraphicsBackendType::Metal:
+            caps.apiVersion = "Metal 3.0";
+            caps.deviceName = "Apple GPU";
+            caps.supportsComputeShaders = true;
+            caps.supportsFloatFramebuffers = true;
+            caps.maxTextureDimension = 8192;
+            break;
+        case GraphicsBackendType::DirectX:
+            caps.apiVersion = "Direct3D 12";
+            caps.deviceName = "Direct3D Device";
+            caps.supportsComputeShaders = true;
+            caps.supportsFloatFramebuffers = true;
+            caps.maxTextureDimension = 8192;
+            break;
+        case GraphicsBackendType::OpenGLES:
+            caps.apiVersion = "OpenGL ES 3.2";
+            caps.deviceName = "GLES Device";
+            caps.supportsComputeShaders = false;
+            caps.supportsFloatFramebuffers = true;
+            caps.maxTextureDimension = 4096;
+            break;
+        case GraphicsBackendType::OpenGL:
+        default:
+            caps.apiVersion = "OpenGL 3.3 Core";
+            caps.deviceName = "OpenGL Device";
+            caps.supportsComputeShaders = false;
+            caps.supportsFloatFramebuffers = true;
+            caps.maxTextureDimension = 4096;
+            break;
+    }
+
+    return caps;
+}
+
 } // namespace Renderer
 } // namespace libprojectM

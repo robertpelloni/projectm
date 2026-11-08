@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.8] - Current
+## [4.1.0-dev.9] - Current
+### Added
+- Added `GetDefaultCapabilities` query function in `src/libprojectM/Renderer/GraphicsBackend.hpp` to provide baseline capability profiles for Vulkan, Metal, DirectX, OpenGLES, and OpenGL.
+
+## [4.1.0-dev.8] - Previous
 ### Changed
 - Refactored `PresetFileParser::ToLower` to reuse standard utility `Utils::ToLower`, combining duplicate string lowercase transformations.
 - Updated `TextureAttachment` to use explicit `Texture::Source::Internal` for texture allocation.
