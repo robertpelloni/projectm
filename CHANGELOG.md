@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.6] - Current
+## [4.1.0-dev.7] - Current
+### Optimized
+- Optimized `Loudness::AdjustRateToFps` by consolidating nested exponent calls `std::pow(std::pow(rate, 30.0f), secondsSinceLastFrame)` into a single `std::pow(rate, 30.0f * secondsSinceLastFrame)`, halving transcendental call overhead in the per-frame beat detection calculation.
+
+## [4.1.0-dev.6] - Previous
 ### Added
 - Added abstract device interface `IGraphicsDevice` in `src/libprojectM/Renderer/GraphicsBackend.hpp` for decoupling graphics hardware access across modern APIs (Vulkan, Metal, DirectX, and OpenGL).
 

@@ -7,11 +7,16 @@
 - Validated CMake test suite execution, successfully executing and passing `projectM-playlist-unittest` and `projectM_EvalLib_Test` with 100% pass rate.
 - Fixed null pointer dereference vulnerability in `src/sdl-test-ui/setup.cpp` when HOME or USERPROFILE environment variable is missing.
 - Advanced graphics backend modernization: introduced `GraphicsBackend.hpp` (`GraphicsBackendType`, `GraphicsBackendCapabilities`, and `IGraphicsDevice` interface), updated `Texture::Source::Internal` in `MilkdropNoise.cpp`, and registered headers in CMake.
-- Executed on `ROADMAP.md` milestone 4 (Performance Profiling & Optimization): optimized `MilkdropFFT::TimeToFrequencyDomain` to reuse a pre-allocated scratchpad buffer, eliminating per-frame heap allocations during audio feature extraction.
+- Executed on `ROADMAP.md` milestone 4 (Performance Profiling & Optimization):
+  - Optimized `MilkdropFFT::TimeToFrequencyDomain` to reuse a pre-allocated scratchpad buffer, eliminating per-frame heap allocations during audio feature extraction.
+  - Optimized `Loudness::AdjustRateToFps` by consolidating nested exponent calls into a single `std::pow` evaluation per band, halving transcendental mathematical overhead in beat detection.
 - Maintained strict documentation governance across `VISION.md`, `ROADMAP.md`, `TODO.md`, `MEMORY.md`, `DEPLOY.md`, `IDEAS.md`, `CHANGELOG.md`, `VERSION.md`, and `HANDOFF.md`.
-- Bumped version to `4.1.0-dev.6`.
+- Bumped version to `4.1.0-dev.7`.
 
 ## Next Steps for Successor Model
 1. The core library builds cleanly and tests pass.
-2. Continue executing on `ROADMAP.md` milestone 1 (Modernize Graphics Backend): implement device implementations adhering to `IGraphicsDevice` (e.g. `OpenGLDevice`, `VulkanDevice`) and texture resource bridges.
-3. Continue monitoring parser overhaul plans (`ROADMAP.md` item 2) and coordinate canonical UI updates with `frontend-sdl2`.
+2. Continue executing on `ROADMAP.md` milestones:
+   - Modernize Graphics Backend (Vulkan/Metal abstraction implementation)
+   - Preset Parser Overhaul (Milkdrop preset parser robustness and extended grammar support)
+   - Performance Profiling (SIMD acceleration for FFT butterfly computations and beat detection)
+3. Coordinate canonical UI integration with `frontend-sdl2`.

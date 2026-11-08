@@ -10,3 +10,4 @@
 - [x] Lay core abstractions for graphics modernization (`GraphicsBackend.hpp` and texture source cleanup).
 - [x] Optimize FFT memory allocation path in `MilkdropFFT` to eliminate per-frame dynamic allocations.
 - [x] Define `IGraphicsDevice` abstract hardware device interface for modern graphics APIs.
+- [x] Optimize beat detection rate calculation in `Loudness::AdjustRateToFps`.
