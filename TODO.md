@@ -17,3 +17,4 @@
 - [x] Align GitHub Actions CI workflows with primary branch `main` and ensure generator packages (bison/flex) are installed.
 - [x] Align documentation index build badges and URLs in `docs/index.rst` to `main`.
 - [x] Clean up redundant duplicate job definition in `.github/workflows/build_osx.yml`.
+- [x] Run automated test suite across `projectM-playlist-unittest`, `projectM_EvalLib_Test`, and C API header validation targets.

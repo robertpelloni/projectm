@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.13] - Current
+## [4.1.0-dev.14] - Current
+### Testing
+- Executed automated test suite across all active test suites: `projectM-playlist-unittest` (playlist integration and ordering), `projectM_EvalLib_Test` (79 AST and expression evaluator unit tests), and verified C99/C++ API headers via `TestMainAPIHeaders` and `TestPlaylistAPIHeaders`, achieving a 100% pass rate.
+
+## [4.1.0-dev.13] - Previous
 ### CI
 - Removed duplicate `build-framework:` job definition in `.github/workflows/build_osx.yml` that was overwriting the primary framework build steps.
 

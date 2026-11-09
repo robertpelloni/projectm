@@ -15,8 +15,9 @@
 - Updated GitHub Actions CI workflows (`build_linux.yml`, `build_windows.yml`, `build_android.yml`, `build_emscripten.yml`) to support `main` alongside `master`, and ensured `bison`/`flex` packages are installed on Linux CI runners.
 - Updated documentation index `docs/index.rst` to point CI build status badges and raw asset links to `main`.
 - Cleaned up redundant duplicate `build-framework:` job definition in `.github/workflows/build_osx.yml` that was colliding with the framework build.
+- Executed automated testing and build verification across `projectM-playlist-unittest`, `projectM_EvalLib_Test` (79 unit tests), and C-compatibility header targets (`TestMainAPIHeaders`, `TestPlaylistAPIHeaders`) with 100% pass rate.
 - Maintained strict documentation governance across `VISION.md`, `ROADMAP.md`, `TODO.md`, `MEMORY.md`, `DEPLOY.md`, `IDEAS.md`, `CHANGELOG.md`, `VERSION.md`, and `HANDOFF.md`.
-- Bumped version to `4.1.0-dev.13`.
+- Bumped version to `4.1.0-dev.14`.
 
 ## Next Steps for Successor Model
 1. The core library builds cleanly and tests pass.
