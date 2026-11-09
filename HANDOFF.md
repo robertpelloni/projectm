@@ -25,8 +25,9 @@
 - Executed continuous test suite and build verification for v4.1.0-dev.21 with 100% pass rate.
 - Executed automated testing and CI verification pipeline execution for v4.1.0-dev.22 with 100% pass rate.
 - Ran automated test suites and target validation for v4.1.0-dev.23 with 100% pass rate.
+- Documented automated test targets and execution instructions in `BUILDING.md`.
 - Maintained strict documentation governance across `VISION.md`, `ROADMAP.md`, `TODO.md`, `MEMORY.md`, `DEPLOY.md`, `IDEAS.md`, `CHANGELOG.md`, `VERSION.md`, and `HANDOFF.md`.
-- Bumped version to `4.1.0-dev.23`.
+- Bumped version to `4.1.0-dev.24`.
 
 ## Next Steps for Successor Model
 1. The core library builds cleanly and tests pass.

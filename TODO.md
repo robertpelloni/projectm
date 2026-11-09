@@ -27,3 +27,4 @@
 - [x] Execute continuous test suite and build verification for v4.1.0-dev.21.
 - [x] Execute automated testing and CI verification pipeline execution for v4.1.0-dev.22.
 - [x] Run automated test suites and target validation for v4.1.0-dev.23.
+- [x] Document automated test targets and execution instructions in `BUILDING.md`.

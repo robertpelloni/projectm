@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.23] - Current
+## [4.1.0-dev.24] - Current
+### Docs
+- Updated `BUILDING.md` with a dedicated "Running tests" section outlining test prerequisite packages and execution commands for playlist unit tests, expression evaluator tests, and API header checks.
+
+## [4.1.0-dev.23] - Previous
 ### Testing
 - Ran automated test suites and build validation targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`) following ref updates, confirming continuous stability with 100% test pass rate.
 
