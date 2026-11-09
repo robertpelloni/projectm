@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.17] - Current
+## [4.1.0-dev.18] - Current
+### Testing
+- Executed comprehensive automated test suite and build validation on `main`, ensuring continued stability across `projectM-playlist-unittest`, `projectM_EvalLib_Test` (79 unit tests), `TestMainAPIHeaders`, and `TestPlaylistAPIHeaders`.
+
+## [4.1.0-dev.17] - Previous
 ### Testing
 - Executed automated test suite and build verification across all active test targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`), validating stability across platforms with a 100% pass rate.
 
