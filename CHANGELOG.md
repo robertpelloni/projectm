@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.12] - Current
+## [4.1.0-dev.13] - Current
+### CI
+- Removed duplicate `build-framework:` job definition in `.github/workflows/build_osx.yml` that was overwriting the primary framework build steps.
+
+## [4.1.0-dev.12] - Previous
 ### Docs
 - Updated `docs/index.rst` to point CI build badges and raw asset links to the primary branch `main`.
 
