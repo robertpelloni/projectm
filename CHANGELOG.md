@@ -1,6 +1,11 @@
 # CHANGELOG
 
-## [4.1.0-dev.10] - Current
+## [4.1.0-dev.11] - Current
+### CI
+- Updated CI workflows (`build_linux.yml`, `build_windows.yml`, `build_android.yml`, `build_emscripten.yml`) to trigger on `main` alongside `master`.
+- Added missing `bison` and `flex` tool installations to `build_linux.yml` runner dependencies.
+
+## [4.1.0-dev.10] - Previous
 ### Docs
 - Updated `MEMORY.md` to document the modern graphics backend abstraction, audio FFT scratchpad optimization, beat detection rate consolidation, and unified string utilities.
 - Updated `DEPLOY.md` with explicit tool dependencies (`bison`, `flex`) and testing dependencies (`libgtest-dev`, `libgmock-dev`).
