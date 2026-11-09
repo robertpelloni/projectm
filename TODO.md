@@ -24,3 +24,4 @@
 - [x] Re-run automated tests and target build validation for v4.1.0-dev.18.
 - [x] Refine developer setup and test target details in `DEPLOY.md`.
 - [x] Run automated build and test targets post ref update for v4.1.0-dev.20.
+- [x] Execute continuous test suite and build verification for v4.1.0-dev.21.
