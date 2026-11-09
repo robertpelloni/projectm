@@ -18,3 +18,4 @@
 - [x] Align documentation index build badges and URLs in `docs/index.rst` to `main`.
 - [x] Clean up redundant duplicate job definition in `.github/workflows/build_osx.yml`.
 - [x] Run automated test suite across `projectM-playlist-unittest`, `projectM_EvalLib_Test`, and C API header validation targets.
+- [x] Verify automated build and test targets post ref update to ensure system stability.

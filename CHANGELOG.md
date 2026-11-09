@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.14] - Current
+## [4.1.0-dev.15] - Current
+### Testing
+- Verified automated build targets and full test suites post-ref updates across `projectM-playlist-unittest`, `projectM_EvalLib_Test` (79 unit tests), `TestMainAPIHeaders`, and `TestPlaylistAPIHeaders`, confirming system integrity and 100% test pass rate.
+
+## [4.1.0-dev.14] - Previous
 ### Testing
 - Executed automated test suite across all active test suites: `projectM-playlist-unittest` (playlist integration and ordering), `projectM_EvalLib_Test` (79 AST and expression evaluator unit tests), and verified C99/C++ API headers via `TestMainAPIHeaders` and `TestPlaylistAPIHeaders`, achieving a 100% pass rate.
 
