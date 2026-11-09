@@ -57,7 +57,6 @@ protected:
     glm::ivec4 m_staticRandomValues{};
 
     std::random_device m_randomDevice;
-    Mesh m_mesh;
 };
 
 } // namespace Renderer

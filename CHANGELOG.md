@@ -1,6 +1,11 @@
 # CHANGELOG
 
-## [4.1.0-dev.9] - Current
+## [4.1.0-dev.10] - Current
+### Docs
+- Updated `MEMORY.md` to document the modern graphics backend abstraction, audio FFT scratchpad optimization, beat detection rate consolidation, and unified string utilities.
+- Updated `DEPLOY.md` with explicit tool dependencies (`bison`, `flex`) and testing dependencies (`libgtest-dev`, `libgmock-dev`).
+
+## [4.1.0-dev.9] - Previous
 ### Added
 - Added `GetDefaultCapabilities` query function in `src/libprojectM/Renderer/GraphicsBackend.hpp` to provide baseline capability profiles for Vulkan, Metal, DirectX, OpenGLES, and OpenGL.
 
