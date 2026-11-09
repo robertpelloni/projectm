@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.25] - Current
+## [4.1.0-dev.26] - Current
+### Build
+- Completed full CMake build and test phase verification, validating 100% test passage across `projectM-playlist-unittest`, `projectM_EvalLib_Test` (79 unit tests), `TestMainAPIHeaders`, and `TestPlaylistAPIHeaders`.
+
+## [4.1.0-dev.25] - Previous
 ### CI
 - Monitored CI and build stability, verifying consistent 100% test pass rates across active test suites (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests) and API header targets.
 

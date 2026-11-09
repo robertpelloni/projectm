@@ -29,3 +29,4 @@
 - [x] Run automated test suites and target validation for v4.1.0-dev.23.
 - [x] Document automated test targets and execution instructions in `BUILDING.md`.
 - [x] Monitor CI build stability and verify test suite pass rates for v4.1.0-dev.25.
+- [x] Execute full CMake build and test phase verification for v4.1.0-dev.26.
