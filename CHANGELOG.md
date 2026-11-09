@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.15] - Current
+## [4.1.0-dev.16] - Current
+### CI
+- Added `workflow_dispatch:` trigger to `.github/workflows/build_osx.yml` enabling manual dispatch for macOS framework and library CI runs across arm64 and x86_64 runners.
+
+## [4.1.0-dev.15] - Previous
 ### Testing
 - Verified automated build targets and full test suites post-ref updates across `projectM-playlist-unittest`, `projectM_EvalLib_Test` (79 unit tests), `TestMainAPIHeaders`, and `TestPlaylistAPIHeaders`, confirming system integrity and 100% test pass rate.
 

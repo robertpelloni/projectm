@@ -17,8 +17,9 @@
 - Cleaned up redundant duplicate `build-framework:` job definition in `.github/workflows/build_osx.yml` that was colliding with the framework build.
 - Executed automated testing and build verification across `projectM-playlist-unittest`, `projectM_EvalLib_Test` (79 unit tests), and C-compatibility header targets (`TestMainAPIHeaders`, `TestPlaylistAPIHeaders`) with 100% pass rate.
 - Verified build and test suite stability after ref updates, ensuring cross-platform stability.
+- Added `workflow_dispatch:` trigger to `.github/workflows/build_osx.yml` allowing manual trigger of macOS builds and test runs.
 - Maintained strict documentation governance across `VISION.md`, `ROADMAP.md`, `TODO.md`, `MEMORY.md`, `DEPLOY.md`, `IDEAS.md`, `CHANGELOG.md`, `VERSION.md`, and `HANDOFF.md`.
-- Bumped version to `4.1.0-dev.15`.
+- Bumped version to `4.1.0-dev.16`.
 
 ## Next Steps for Successor Model
 1. The core library builds cleanly and tests pass.
