@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.27] - Current
+## [4.1.0-dev.28] - Current
+### Testing
+- Ran automated test suites and target validation across playlist unit tests and Milkdrop expression parser tests with 100% pass rate.
+
+## [4.1.0-dev.27] - Previous
 ### Testing
 - Executed continuous automated testing and build verification across all active targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`), ensuring clean and stable cross-platform state with a 100% pass rate.
 
