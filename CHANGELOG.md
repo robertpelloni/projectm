@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.24] - Current
+## [4.1.0-dev.25] - Current
+### CI
+- Monitored CI and build stability, verifying consistent 100% test pass rates across active test suites (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests) and API header targets.
+
+## [4.1.0-dev.24] - Previous
 ### Docs
 - Updated `BUILDING.md` with a dedicated "Running tests" section outlining test prerequisite packages and execution commands for playlist unit tests, expression evaluator tests, and API header checks.
 
