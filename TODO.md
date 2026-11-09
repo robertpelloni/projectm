@@ -20,3 +20,4 @@
 - [x] Run automated test suite across `projectM-playlist-unittest`, `projectM_EvalLib_Test`, and C API header validation targets.
 - [x] Verify automated build and test targets post ref update to ensure system stability.
 - [x] Add workflow_dispatch trigger to macOS CI pipeline for manual runs.
+- [x] Verify build stability and automated test suites across all targets for v4.1.0-dev.17.

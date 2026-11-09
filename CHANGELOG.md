@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.16] - Current
+## [4.1.0-dev.17] - Current
+### Testing
+- Executed automated test suite and build verification across all active test targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`), validating stability across platforms with a 100% pass rate.
+
+## [4.1.0-dev.16] - Previous
 ### CI
 - Added `workflow_dispatch:` trigger to `.github/workflows/build_osx.yml` enabling manual dispatch for macOS framework and library CI runs across arm64 and x86_64 runners.
 
