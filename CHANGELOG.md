@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.21] - Current
+## [4.1.0-dev.22] - Current
+### Testing
+- Executed automated testing and build verification across test suites and C/C++ API header validation targets with 100% pass rate.
+
+## [4.1.0-dev.21] - Previous
 ### Testing
 - Executed continuous test suite and target build verification across all active targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`), maintaining 100% pass rate.
 
