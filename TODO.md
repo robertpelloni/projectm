@@ -26,3 +26,4 @@
 - [x] Run automated build and test targets post ref update for v4.1.0-dev.20.
 - [x] Execute continuous test suite and build verification for v4.1.0-dev.21.
 - [x] Execute automated testing and CI verification pipeline execution for v4.1.0-dev.22.
+- [x] Run automated test suites and target validation for v4.1.0-dev.23.

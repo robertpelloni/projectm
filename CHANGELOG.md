@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.22] - Current
+## [4.1.0-dev.23] - Current
+### Testing
+- Ran automated test suites and build validation targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`) following ref updates, confirming continuous stability with 100% test pass rate.
+
+## [4.1.0-dev.22] - Previous
 ### Testing
 - Executed automated testing and build verification across test suites and C/C++ API header validation targets with 100% pass rate.
 
