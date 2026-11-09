@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.11] - Current
+## [4.1.0-dev.12] - Current
+### Docs
+- Updated `docs/index.rst` to point CI build badges and raw asset links to the primary branch `main`.
+
+## [4.1.0-dev.11] - Previous
 ### CI
 - Updated CI workflows (`build_linux.yml`, `build_windows.yml`, `build_android.yml`, `build_emscripten.yml`) to trigger on `main` alongside `master`.
 - Added missing `bison` and `flex` tool installations to `build_linux.yml` runner dependencies.

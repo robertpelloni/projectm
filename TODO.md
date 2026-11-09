@@ -15,3 +15,4 @@
 - [x] Implement baseline backend capabilities profile provider `GetDefaultCapabilities`.
 - [x] Refine documentation and deploy specifications in `MEMORY.md` and `DEPLOY.md`.
 - [x] Align GitHub Actions CI workflows with primary branch `main` and ensure generator packages (bison/flex) are installed.
+- [x] Align documentation index build badges and URLs in `docs/index.rst` to `main`.

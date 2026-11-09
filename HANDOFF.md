@@ -13,8 +13,9 @@
 - Executed on `ROADMAP.md` milestone 2 (Preset Parser Overhaul): refactored `PresetFileParser::ToLower` to reuse standard utility `Utils::ToLower`, combining redundant string transformation paths.
 - Refined architecture guidelines in `MEMORY.md` and complete deployment dependencies in `DEPLOY.md`.
 - Updated GitHub Actions CI workflows (`build_linux.yml`, `build_windows.yml`, `build_android.yml`, `build_emscripten.yml`) to support `main` alongside `master`, and ensured `bison`/`flex` packages are installed on Linux CI runners.
+- Updated documentation index `docs/index.rst` to point CI build status badges and raw asset links to `main`.
 - Maintained strict documentation governance across `VISION.md`, `ROADMAP.md`, `TODO.md`, `MEMORY.md`, `DEPLOY.md`, `IDEAS.md`, `CHANGELOG.md`, `VERSION.md`, and `HANDOFF.md`.
-- Bumped version to `4.1.0-dev.11`.
+- Bumped version to `4.1.0-dev.12`.
 
 ## Next Steps for Successor Model
 1. The core library builds cleanly and tests pass.

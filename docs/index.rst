@@ -13,7 +13,7 @@
 |Discord Shield| `Chat with us on
 Discord <https://discord.gg/mMrxAqaa3W>`__
 
-.. figure:: https://github.com/projectM-visualizer/projectm/raw/master/web/logo.png
+.. figure:: https://github.com/projectM-visualizer/projectm/raw/main/web/logo.png
    :alt: Logo
 
    Logo
@@ -336,14 +336,14 @@ Please note well:
 Authors
 -------
 
-`Authors <https://github.com/projectM-visualizer/projectm/raw/master/AUTHORS.txt>`__
+`Authors <https://github.com/projectM-visualizer/projectm/raw/main/AUTHORS.txt>`__
 
 License
 -------
 
 The core projectM library is released under the `GNU Lesser General
 Public License
-2.1 <https://github.com/projectM-visualizer/projectm/raw/master/LICENSE.txt>`__
+2.1 <https://github.com/projectM-visualizer/projectm/raw/main/LICENSE.txt>`__
 to keep any changes open-sourced, but also enable the use of libprojectM
 in closed-source applications (as a shared library) as long as the
 license terms are adhered to. The up- and downstream projects may use
@@ -356,15 +356,15 @@ Wiki
 More information for developers is available from the `projectM
 Wiki <https://github.com/projectM-visualizer/projectm/wiki>`__.
 
-.. |Windows Build Status| image:: https://github.com/projectM-visualizer/projectm/actions/workflows/build_windows.yml/badge.svg?branch=master
+.. |Windows Build Status| image:: https://github.com/projectM-visualizer/projectm/actions/workflows/build_windows.yml/badge.svg?branch=main
    :target: https://github.com/projectM-visualizer/projectm/actions/workflows/build_windows.yml
-.. |Linux Build Status| image:: https://github.com/projectM-visualizer/projectm/actions/workflows/build_linux.yml/badge.svg?branch=master
+.. |Linux Build Status| image:: https://github.com/projectM-visualizer/projectm/actions/workflows/build_linux.yml/badge.svg?branch=main
    :target: https://github.com/projectM-visualizer/projectm/actions/workflows/build_linux.yml
-.. |macOS Build Status| image:: https://github.com/projectM-visualizer/projectm/actions/workflows/build_osx.yml/badge.svg?branch=master
+.. |macOS Build Status| image:: https://github.com/projectM-visualizer/projectm/actions/workflows/build_osx.yml/badge.svg?branch=main
    :target: https://github.com/projectM-visualizer/projectm/actions/workflows/build_osx.yml
-.. |Emscripten Build Status| image:: https://github.com/projectM-visualizer/projectm/actions/workflows/build_emscripten.yml/badge.svg?branch=master
+.. |Emscripten Build Status| image:: https://github.com/projectM-visualizer/projectm/actions/workflows/build_emscripten.yml/badge.svg?branch=main
    :target: https://github.com/projectM-visualizer/projectm/actions/workflows/build_emscripten.yml
-.. |Android Build Status| image:: https://github.com/projectM-visualizer/projectm/actions/workflows/build_android.yml/badge.svg?branch=master
+.. |Android Build Status| image:: https://github.com/projectM-visualizer/projectm/actions/workflows/build_android.yml/badge.svg?branch=main
    :target: https://github.com/projectM-visualizer/projectm/actions/workflows/build_android.yml
 .. |Discord Shield| image:: https://discordapp.com/api/guilds/737206408482914387/widget.png?style=shield
 .. |image6| image:: http://img.youtube.com/vi/2dSam8zwSFw/0.jpg
