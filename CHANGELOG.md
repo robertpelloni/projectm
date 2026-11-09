@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.19] - Current
+## [4.1.0-dev.20] - Current
+### Testing
+- Ran automated build and verification passes for all test suites (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests) and API header targets with 100% pass rate.
+
+## [4.1.0-dev.19] - Previous
 ### Docs
 - Refined `DEPLOY.md` to detail specific test execution targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test`, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`) and optional dependencies (`libsdl2-dev`).
 
