@@ -20,8 +20,9 @@
 - Added `workflow_dispatch:` trigger to `.github/workflows/build_osx.yml` allowing manual trigger of macOS builds and test runs.
 - Executed automated test suite and build verification post ref updates with 100% pass rate.
 - Verified test suite and target build stability across active test targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`).
+- Refined developer environment instructions and automated test target execution commands in `DEPLOY.md`.
 - Maintained strict documentation governance across `VISION.md`, `ROADMAP.md`, `TODO.md`, `MEMORY.md`, `DEPLOY.md`, `IDEAS.md`, `CHANGELOG.md`, `VERSION.md`, and `HANDOFF.md`.
-- Bumped version to `4.1.0-dev.18`.
+- Bumped version to `4.1.0-dev.19`.
 
 ## Next Steps for Successor Model
 1. The core library builds cleanly and tests pass.

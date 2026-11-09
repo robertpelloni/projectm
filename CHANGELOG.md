@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.18] - Current
+## [4.1.0-dev.19] - Current
+### Docs
+- Refined `DEPLOY.md` to detail specific test execution targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test`, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`) and optional dependencies (`libsdl2-dev`).
+
+## [4.1.0-dev.18] - Previous
 ### Testing
 - Executed comprehensive automated test suite and build validation on `main`, ensuring continued stability across `projectM-playlist-unittest`, `projectM_EvalLib_Test` (79 unit tests), `TestMainAPIHeaders`, and `TestPlaylistAPIHeaders`.
 

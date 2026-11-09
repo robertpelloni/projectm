@@ -22,3 +22,4 @@
 - [x] Add workflow_dispatch trigger to macOS CI pipeline for manual runs.
 - [x] Verify build stability and automated test suites across all targets for v4.1.0-dev.17.
 - [x] Re-run automated tests and target build validation for v4.1.0-dev.18.
+- [x] Refine developer setup and test target details in `DEPLOY.md`.
