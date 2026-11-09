@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.26] - Current
+## [4.1.0-dev.27] - Current
+### Testing
+- Executed continuous automated testing and build verification across all active targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`), ensuring clean and stable cross-platform state with a 100% pass rate.
+
+## [4.1.0-dev.26] - Previous
 ### Build
 - Completed full CMake build and test phase verification, validating 100% test passage across `projectM-playlist-unittest`, `projectM_EvalLib_Test` (79 unit tests), `TestMainAPIHeaders`, and `TestPlaylistAPIHeaders`.
 
