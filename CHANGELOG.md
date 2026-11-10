@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.32] - Current
+## [4.1.0-dev.33] - Current
+### Testing
+- Executed continuous automated build and test verification across all active targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`) following ref updates, confirming 100% test pass rate.
+
+## [4.1.0-dev.32] - Previous
 ### Testing
 - Executed continuous automated testing and build verification across all active targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`) following ref updates, confirming 100% test pass rate.
 
