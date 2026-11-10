@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.29] - Current
+## [4.1.0-dev.30] - Current
+### Testing
+- Completed release cycle stability testing, validating 100% test pass rate across `projectM-playlist-unittest`, `projectM_EvalLib_Test` (79 unit tests), `TestMainAPIHeaders`, and `TestPlaylistAPIHeaders`.
+
+## [4.1.0-dev.29] - Previous
 ### Testing
 - Executed continuous automated testing and build validation targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`) to ensure cross-platform release cycle readiness with a 100% pass rate.
 
