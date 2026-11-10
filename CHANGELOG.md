@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.30] - Current
+## [4.1.0-dev.31] - Current
+### Testing
+- Executed continuous automated CI checks and target validation across test suites and C API header checks, confirming 100% test pass rate.
+
+## [4.1.0-dev.30] - Previous
 ### Testing
 - Completed release cycle stability testing, validating 100% test pass rate across `projectM-playlist-unittest`, `projectM_EvalLib_Test` (79 unit tests), `TestMainAPIHeaders`, and `TestPlaylistAPIHeaders`.
 
