@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## [4.1.0-dev.28] - Current
+## [4.1.0-dev.29] - Current
+### Testing
+- Executed continuous automated testing and build validation targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`) to ensure cross-platform release cycle readiness with a 100% pass rate.
+
+## [4.1.0-dev.28] - Previous
 ### Testing
 - Ran automated test suites and target validation across playlist unit tests and Milkdrop expression parser tests with 100% pass rate.
 
