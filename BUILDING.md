@@ -80,6 +80,24 @@ cmake --build . -- -j && sudo cmake --build . --target install
 
 If you have a desktop environment installed, you can now run `[prefix]/bin/projectMSDL`.
 
+#### Running tests
+
+To build and run the automated test suite, ensure `-DBUILD_TESTING=ON` was provided to CMake and that `libgtest-dev` and `libgmock-dev` are installed:
+
+```bash
+cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON ..
+cmake --build . -j$(nproc)
+
+# Run playlist unit tests:
+ctest -R "projectM-playlist-unittest" --output-on-failure
+
+# Run Milkdrop expression evaluation tests:
+./vendor/projectm-eval/tests/projectM_EvalLib_Test
+
+# Test C/C++ API header compatibility:
+cmake --build . --target TestMainAPIHeaders TestPlaylistAPIHeaders
+```
+
 ## Dependencies
 
 Depending on the OS/distribution and packaging system, libraries might be split into separate packages with binaries and
