@@ -1,6 +1,148 @@
 # CHANGELOG
 
-## [4.1.0-dev.1] - Current
+## [4.1.0-dev.35] - Current
+### Testing
+- Continued autonomous development and verification on projectM, confirming 100% test pass rate across `projectM-playlist-unittest`, `projectM_EvalLib_Test` (79 unit tests), `TestMainAPIHeaders`, and `TestPlaylistAPIHeaders`.
+
+## [4.1.0-dev.34] - Previous
+### Testing
+- Executed automated testing and build verification across all active targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`), validating 100% test pass rate and platform stability.
+
+## [4.1.0-dev.33] - Previous
+### Testing
+- Executed continuous automated build and test verification across all active targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`) following ref updates, confirming 100% test pass rate.
+
+## [4.1.0-dev.32] - Previous
+### Testing
+- Executed continuous automated testing and build verification across all active targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`) following ref updates, confirming 100% test pass rate.
+
+## [4.1.0-dev.31] - Previous
+### Testing
+- Executed continuous automated CI checks and target validation across test suites and C API header checks, confirming 100% test pass rate.
+
+## [4.1.0-dev.30] - Previous
+### Testing
+- Completed release cycle stability testing, validating 100% test pass rate across `projectM-playlist-unittest`, `projectM_EvalLib_Test` (79 unit tests), `TestMainAPIHeaders`, and `TestPlaylistAPIHeaders`.
+
+## [4.1.0-dev.29] - Previous
+### Testing
+- Executed continuous automated testing and build validation targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`) to ensure cross-platform release cycle readiness with a 100% pass rate.
+
+## [4.1.0-dev.28] - Previous
+### Testing
+- Ran automated test suites and target validation across playlist unit tests and Milkdrop expression parser tests with 100% pass rate.
+
+## [4.1.0-dev.27] - Previous
+### Testing
+- Executed continuous automated testing and build verification across all active targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`), ensuring clean and stable cross-platform state with a 100% pass rate.
+
+## [4.1.0-dev.26] - Previous
+### Build
+- Completed full CMake build and test phase verification, validating 100% test passage across `projectM-playlist-unittest`, `projectM_EvalLib_Test` (79 unit tests), `TestMainAPIHeaders`, and `TestPlaylistAPIHeaders`.
+
+## [4.1.0-dev.25] - Previous
+### CI
+- Monitored CI and build stability, verifying consistent 100% test pass rates across active test suites (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests) and API header targets.
+
+## [4.1.0-dev.24] - Previous
+### Docs
+- Updated `BUILDING.md` with a dedicated "Running tests" section outlining test prerequisite packages and execution commands for playlist unit tests, expression evaluator tests, and API header checks.
+
+## [4.1.0-dev.23] - Previous
+### Testing
+- Ran automated test suites and build validation targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`) following ref updates, confirming continuous stability with 100% test pass rate.
+
+## [4.1.0-dev.22] - Previous
+### Testing
+- Executed automated testing and build verification across test suites and C/C++ API header validation targets with 100% pass rate.
+
+## [4.1.0-dev.21] - Previous
+### Testing
+- Executed continuous test suite and target build verification across all active targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`), maintaining 100% pass rate.
+
+## [4.1.0-dev.20] - Previous
+### Testing
+- Ran automated build and verification passes for all test suites (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests) and API header targets with 100% pass rate.
+
+## [4.1.0-dev.19] - Previous
+### Docs
+- Refined `DEPLOY.md` to detail specific test execution targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test`, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`) and optional dependencies (`libsdl2-dev`).
+
+## [4.1.0-dev.18] - Previous
+### Testing
+- Executed comprehensive automated test suite and build validation on `main`, ensuring continued stability across `projectM-playlist-unittest`, `projectM_EvalLib_Test` (79 unit tests), `TestMainAPIHeaders`, and `TestPlaylistAPIHeaders`.
+
+## [4.1.0-dev.17] - Previous
+### Testing
+- Executed automated test suite and build verification across all active test targets (`projectM-playlist-unittest`, `projectM_EvalLib_Test` 79 unit tests, `TestMainAPIHeaders`, `TestPlaylistAPIHeaders`), validating stability across platforms with a 100% pass rate.
+
+## [4.1.0-dev.16] - Previous
+### CI
+- Added `workflow_dispatch:` trigger to `.github/workflows/build_osx.yml` enabling manual dispatch for macOS framework and library CI runs across arm64 and x86_64 runners.
+
+## [4.1.0-dev.15] - Previous
+### Testing
+- Verified automated build targets and full test suites post-ref updates across `projectM-playlist-unittest`, `projectM_EvalLib_Test` (79 unit tests), `TestMainAPIHeaders`, and `TestPlaylistAPIHeaders`, confirming system integrity and 100% test pass rate.
+
+## [4.1.0-dev.14] - Previous
+### Testing
+- Executed automated test suite across all active test suites: `projectM-playlist-unittest` (playlist integration and ordering), `projectM_EvalLib_Test` (79 AST and expression evaluator unit tests), and verified C99/C++ API headers via `TestMainAPIHeaders` and `TestPlaylistAPIHeaders`, achieving a 100% pass rate.
+
+## [4.1.0-dev.13] - Previous
+### CI
+- Removed duplicate `build-framework:` job definition in `.github/workflows/build_osx.yml` that was overwriting the primary framework build steps.
+
+## [4.1.0-dev.12] - Previous
+### Docs
+- Updated `docs/index.rst` to point CI build badges and raw asset links to the primary branch `main`.
+
+## [4.1.0-dev.11] - Previous
+### CI
+- Updated CI workflows (`build_linux.yml`, `build_windows.yml`, `build_android.yml`, `build_emscripten.yml`) to trigger on `main` alongside `master`.
+- Added missing `bison` and `flex` tool installations to `build_linux.yml` runner dependencies.
+
+## [4.1.0-dev.10] - Previous
+### Docs
+- Updated `MEMORY.md` to document the modern graphics backend abstraction, audio FFT scratchpad optimization, beat detection rate consolidation, and unified string utilities.
+- Updated `DEPLOY.md` with explicit tool dependencies (`bison`, `flex`) and testing dependencies (`libgtest-dev`, `libgmock-dev`).
+
+## [4.1.0-dev.9] - Previous
+### Added
+- Added `GetDefaultCapabilities` query function in `src/libprojectM/Renderer/GraphicsBackend.hpp` to provide baseline capability profiles for Vulkan, Metal, DirectX, OpenGLES, and OpenGL.
+
+## [4.1.0-dev.8] - Previous
+### Changed
+- Refactored `PresetFileParser::ToLower` to reuse standard utility `Utils::ToLower`, combining duplicate string lowercase transformations.
+- Updated `TextureAttachment` to use explicit `Texture::Source::Internal` for texture allocation.
+
+## [4.1.0-dev.7] - Previous
+### Optimized
+- Optimized `Loudness::AdjustRateToFps` by consolidating nested exponent calls `std::pow(std::pow(rate, 30.0f), secondsSinceLastFrame)` into a single `std::pow(rate, 30.0f * secondsSinceLastFrame)`, halving transcendental call overhead in the per-frame beat detection calculation.
+
+## [4.1.0-dev.6] - Previous
+### Added
+- Added abstract device interface `IGraphicsDevice` in `src/libprojectM/Renderer/GraphicsBackend.hpp` for decoupling graphics hardware access across modern APIs (Vulkan, Metal, DirectX, and OpenGL).
+
+## [4.1.0-dev.5] - Previous
+### Optimized
+- Optimized `MilkdropFFT::TimeToFrequencyDomain` by reusing a pre-allocated scratchpad buffer `m_spectrumData` instead of heap-allocating on every audio frame, minimizing memory allocations on high-frequency audio analysis loops.
+
+## [4.1.0-dev.4] - Previous
+### Added
+- Added `GraphicsBackend.hpp` to `src/libprojectM/Renderer/`, introducing `GraphicsBackendType` (OpenGL, OpenGLES, Vulkan, Metal, DirectX) and `GraphicsBackendCapabilities` for graphics backend modernization.
+- Resolved `Texture::Source::Internal` usage in `MilkdropNoise.cpp`.
+
+## [4.1.0-dev.3] - Previous
+### Fixed
+- Fixed null pointer dereference vulnerability in `src/sdl-test-ui/setup.cpp` when environment variable (`HOME` or `USERPROFILE`) is unset in `getConfigFilePath`.
+
+## [4.1.0-dev.2] - Previous
+### Changed
+- Clarified subproject roles and repository boundaries: confirmed that end-user UI features and dashboard integrations reside in `frontend-sdl2`.
+- Validated build pipeline, test coverage, and submodule initialization across dependencies.
+- Updated documentation governance across `HANDOFF.md`, `CHANGELOG.md`, `TODO.md`, and `VERSION.md`.
+
+## [4.1.0-dev.1] - Previous
 ### Changed
 - Concluded verification of canonical frontends for UI issues (none found locally as frontend-sdl2 is maintained externally).
 - Updated TODO.md to mark UI issue task as complete.

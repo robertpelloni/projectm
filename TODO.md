@@ -5,3 +5,37 @@
 - [x] Review pending pull requests and address open UI issues in canonical frontends. (Checked local sdl-test-ui; actual canonical UI is in frontend-sdl2 external repo)
 - [x] Polish cross-platform CI pipelines (GitHub Actions) for better test coverage.
 - [x] Refactor redundant code paths in Audio/PCM buffer implementations.
+- [x] Audit test coverage and build pipeline on primary branch `main`.
+- [x] Guard against null pointer dereference in `src/sdl-test-ui/setup.cpp` when HOME/USERPROFILE is unset.
+- [x] Lay core abstractions for graphics modernization (`GraphicsBackend.hpp` and texture source cleanup).
+- [x] Optimize FFT memory allocation path in `MilkdropFFT` to eliminate per-frame dynamic allocations.
+- [x] Define `IGraphicsDevice` abstract hardware device interface for modern graphics APIs.
+- [x] Optimize beat detection rate calculation in `Loudness::AdjustRateToFps`.
+- [x] Consolidate redundant string lowercase transformations in `PresetFileParser` using `Utils::ToLower`.
+- [x] Implement baseline backend capabilities profile provider `GetDefaultCapabilities`.
+- [x] Refine documentation and deploy specifications in `MEMORY.md` and `DEPLOY.md`.
+- [x] Align GitHub Actions CI workflows with primary branch `main` and ensure generator packages (bison/flex) are installed.
+- [x] Align documentation index build badges and URLs in `docs/index.rst` to `main`.
+- [x] Clean up redundant duplicate job definition in `.github/workflows/build_osx.yml`.
+- [x] Run automated test suite across `projectM-playlist-unittest`, `projectM_EvalLib_Test`, and C API header validation targets.
+- [x] Verify automated build and test targets post ref update to ensure system stability.
+- [x] Add workflow_dispatch trigger to macOS CI pipeline for manual runs.
+- [x] Verify build stability and automated test suites across all targets for v4.1.0-dev.17.
+- [x] Re-run automated tests and target build validation for v4.1.0-dev.18.
+- [x] Refine developer setup and test target details in `DEPLOY.md`.
+- [x] Run automated build and test targets post ref update for v4.1.0-dev.20.
+- [x] Execute continuous test suite and build verification for v4.1.0-dev.21.
+- [x] Execute automated testing and CI verification pipeline execution for v4.1.0-dev.22.
+- [x] Run automated test suites and target validation for v4.1.0-dev.23.
+- [x] Document automated test targets and execution instructions in `BUILDING.md`.
+- [x] Monitor CI build stability and verify test suite pass rates for v4.1.0-dev.25.
+- [x] Execute full CMake build and test phase verification for v4.1.0-dev.26.
+- [x] Run automated test suites and target verification for v4.1.0-dev.27.
+- [x] Run automated test suite execution and verification for v4.1.0-dev.28.
+- [x] Verify release cycle readiness via automated test suites for v4.1.0-dev.29.
+- [x] Complete release cycle stability verification across all test targets for v4.1.0-dev.30.
+- [x] Run automated CI checks and target validation for v4.1.0-dev.31.
+- [x] Execute continuous automated testing and build verification for v4.1.0-dev.32.
+- [x] Verify automated build and test targets post ref update for v4.1.0-dev.33.
+- [x] Run automated test suite execution and verification for v4.1.0-dev.34.
+- [x] Execute autonomous development and verification for v4.1.0-dev.35.

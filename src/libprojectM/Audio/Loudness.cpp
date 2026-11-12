@@ -52,10 +52,9 @@ void Loudness::UpdateBandAverage(double secondsSinceLastFrame, uint32_t frame)
 
 auto Loudness::AdjustRateToFps(float rate, double secondsSinceLastFrame) -> float
 {
-    float const perSecondDecayRateAtFps1 = std::pow(rate, 30.0f);
-    float const perFrameDecayRateAtFps2 = std::pow(perSecondDecayRateAtFps1, static_cast<float>(secondsSinceLastFrame));
-
-    return perFrameDecayRateAtFps2;
+    // Mathematically (rate^30)^secondsSinceLastFrame == rate^(30 * secondsSinceLastFrame).
+    // Combining into a single std::pow call halves expensive transcendental evaluations in the per-frame beat detection loop.
+    return std::pow(rate, 30.0f * static_cast<float>(secondsSinceLastFrame));
 }
 
 } // namespace Audio
